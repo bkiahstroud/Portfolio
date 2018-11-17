@@ -5,7 +5,7 @@
 }
 
 h1 {
-  margin: 80px 0;
+  margin: 80px 0 40px;
 }
 
 p {
@@ -27,13 +27,19 @@ section {
 }
 
 .dark-background {
-  background-color: rgba(0,0,0,0.95);
+  background-color: rgba(0,0,0,0.9);
   color: #fff;
 }
 
+/* rgb(1,221,234) */
 .light-background {
-  background-color: rgba(0,0,0,0.08);
+  background-color: rgba(226,226,226);
   color: #000;
+}
+
+.light-background h2 {
+  color: rgb(1,221,234);
+  text-shadow: #3b2a18 -1px 1px 3px;
 }
 
 /* rgb(239,108,15) */
@@ -48,7 +54,7 @@ ul {
   flex-direction: row;
   justify-content: space-around;
   border-top: 1px solid white;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 footer {
@@ -67,6 +73,9 @@ footer img {
 }
 
 .landing {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('img/landing.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
   color: #fff;
   height: 100vh;
   display: flex;
@@ -101,11 +110,6 @@ footer img {
 }
 
 @media only screen and (min-width: 550px) {
-  .landing {
-    background: url('img/landing.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
   section {
     padding: 65px 0;
   }
